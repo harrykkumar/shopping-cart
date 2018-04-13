@@ -1,0 +1,15 @@
+<div class="example-container">
+  <mat-card-content>
+    <mat-grid-list cols="5" rowHeight="2:2">
+      <mat-grid-tile *ngFor="let item of procductList ; let i=index">
+        <img (click)="openDialog(item)" class="imageClass" src="{{item.image_path}}">
+        <mat-grid-tile-footer>
+          <h3 mat-line>{{item.name}}</h3>
+          <span mat-line>Price: {{item.price}}</span>
+          <button mat-raised-button  [color]="(isAdded(item)? 'primary':'warn')" (click)="addtoCart(item)" name="action">{{isAdded(item)? 'Added' :'Add to cart'}}</button>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</div>
+

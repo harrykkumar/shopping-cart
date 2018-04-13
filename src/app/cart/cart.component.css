@@ -1,0 +1,56 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+.listCrt{
+	padding-top: 5%;
+    padding-left: 26%;
+    padding-bottom: 10%;
+    padding-right: 22%;
+}
+img.imageClass {
+    width: 148.84px;
+    height: 148.84px;
+}
+.payment-btn{
+	    padding-top: 8%;
+    padding-left: 29%;
+}
+.checkbtn{
+     background-color: #1b5d29;
+    color: navajowhite;
+}
+.alert-danger {
+  color: #e4071c;
+  background-color: #cc727a1f;
+  border-color: #ef9ca5;
+  padding: 7px;
+  margin: -1px;
+  margin-left: 30%;
+}
+
+.alert-success {
+  color: #21a53f;
+  background-color: #e0f3e594;
+  border-color: #b2f3c0;
+  padding: 7px;
+  margin: -1px;
+  margin-left: 30%;
+}
+.crtDesp{
+      float: right;
+    background-color: #e1f3e9;
+    padding: 5%;
+    border: 1 px solid red;
+    border: 1px solid #d0e8a3;
+}
+.despTitle{
+  border: 1px solid #ccc;
+    border-radius: 5px;
+        background-color: #ebf1d057;
+}
+.price{
+      background-color: #9aadd0;
+    padding: 7px;
+    color: #fff
+}

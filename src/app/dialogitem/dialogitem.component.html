@@ -1,0 +1,29 @@
+<div *ngIf="data">
+  <h2 mat-dialog-title> {{data.name}} </h2>
+  <div class="row show-hide-message">
+    <div [ngClass]="messageClass">
+      {{message}}
+    </div>
+  </div>
+  <hr>
+  <mat-dialog-content>
+    <span>{{data.description}}</span>
+    <br>
+    <span> All purchases on shopMart are new and genuine. Every seller listed with us is required to enter into a legal agreement to sell only new and genuine items. We diligently approve only those sellers who can be trusted to sell you high quality items at unbeatable prices.</span>
+    <img class="imageClass" src="{{data.image_path}}">
+    <br/>
+    <br/>
+    <strong>  <span mat-line>Price: {{data.price}}/-</span></strong>
+    <br>
+    <br>
+    <strong>Likes:{{data.likes}}</strong> |
+    <strong>Dislikes:{{data.dislikes}}</strong>
+  </mat-dialog-content>
+  <hr>
+  <mat-dialog-actions>
+    <button mat-raised-button color="warn" *ngIf="cartItems.indexOf(data._id)<0" (click)="addtoCartItem(data)" name="action">ADD TO CART</button>
+    <button mat-raised-button color="warn" *ngIf="cartItems.indexOf(data._id)>=0" (click)="removeItem(data._id)">REMOVE</button>&nbsp;
+    <button mat-raised-button (click)="onCloseCancel()">BACK</button>
+    <button mat-raised-button *ngIf="checkBtn" class="checkbtn" (click)="checkOutBtn()">CHECK OUT</button>
+  </mat-dialog-actions>
+</div>

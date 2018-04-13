@@ -1,0 +1,30 @@
+img.imageClass {
+    width: 148.84px;
+    height: 148.84px;
+    float: right;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+.checkbtn{
+	background-color: mediumseagreen;
+    color: white;
+
+}
+
+.alert-danger {
+  color: #e4071c;
+  background-color: #cc727a1f;
+  border-color: #ef9ca5;
+  padding: 6px;
+  margin: -7px;
+  margin-left: 40%;
+}
+
+.alert-success {
+  color: #21a53f;
+  background-color: #e0f3e594;
+  border-color: #b2f3c0;
+  padding: 6px;
+  margin: -7px;
+  margin-left: 40%;
+}

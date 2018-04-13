@@ -1,0 +1,43 @@
+mat-grid-tile {
+  background: lightblue;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.addcrtBtn{
+background-color: indianred;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+.mat-grid-list {
+    display: block;
+    position: relative;
+    /* padding: 20px; */
+    width: 94%;
+    margin: 40px auto;
+}
+img.imageClass {
+    width: 148.84px;
+    height: 148.84px;
+}
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 70%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    margin: 115px auto;
+}

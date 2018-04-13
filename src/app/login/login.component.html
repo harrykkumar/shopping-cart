@@ -1,0 +1,25 @@
+<div class="example-container">
+      <div class="row show-hide-message">
+        <div [ngClass]="messageClass">
+          {{message}}
+        </div>
+      </div>
+   <form [formGroup]="form" (ngSubmit)="onLoginSubmit()" >
+   <!-- <form > -->
+      <mat-input-container class="conainter">
+        <input matInput class="inputA" type="email"  required formControlName="email" id="username" name="email" >
+        <mat-placeholder>
+          <i class="material-icons app-input-icon">face</i>Email
+        </mat-placeholder>
+      </mat-input-container><br><br>
+      <mat-input-container class="conainter">
+        <input matInput class="inputA" type="password" formControlName="password" required  id="password" name="password" >
+        <mat-placeholder >
+          <i class="material-icons app-input-icon">lock_open</i>Password
+        </mat-placeholder>
+      </mat-input-container><br><br>
+      <button mat-raised-button color="warn"  type="submit" name="action">LOGIN</button><br><br>
+      <mat-slide-toggle color="primary"><small>Remember me!</small></mat-slide-toggle>
+    </form >
+  </div>
+

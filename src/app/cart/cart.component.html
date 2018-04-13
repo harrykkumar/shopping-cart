@@ -1,0 +1,32 @@
+<div class="listCrt example-container">
+      <div class="row show-hide-message">
+        <div [ngClass]="messageClass">
+          {{message}}
+        </div>
+      </div>
+  <h2 mat-dialog-title class="title"> CART ITEM's </h2>   <h2 mat-dialog-title class="title">Total Item: {{totalItem}} </h2> 
+  <hr>
+  <mat-card-content>
+    <mat-grid-list cols="1" rowHeight="4:1">
+      <mat-grid-tile class="despTitle" *ngFor="let item of cartItemList ">
+        <img (click)="openDialog(item)" class="imageClass" src="{{item.image_path}}">
+        <div  class="crtDesp">
+           <h3 mat-line>{{item.name}}</h3>
+          <span class="price" mat-line>Price: {{item.price}}</span>
+          <span mat-line>Description: {{item.description}}</span>
+        </div>
+        <!-- <mat-grid-tile-footer>
+         
+        </mat-grid-tile-footer> -->
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+  <div class="payment-btn">
+    <mat-dialog-actions>
+      <button mat-raised-button color="warn" >Total Price:Rs.{{totalPrice ?  totalPrice : '00:00'}}</button>
+      <button mat-raised-button class="checkbtn" (click)="paymentForItem(cartItemList)">Proceed to Payment </button>
+
+    </mat-dialog-actions>
+  </div>
+</div>
+
